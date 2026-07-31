@@ -5,7 +5,7 @@ import './index.css'
 const descList = [
     {
         title: 'github',
-        href: 'https://github.com/ZJU-CTAG/NoCode-bench',
+        href: 'https://github.com/Doc2Feat-bench/Doc2Feat-bench',
         badge: 'https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge'
     },
     {
@@ -15,7 +15,7 @@ const descList = [
     },
     {
         title: 'huggingface',
-        href: 'https://huggingface.co/NoCode-bench',
+        href: 'https://huggingface.co/Doc2Feat-bench',
         badge: 'https://img.shields.io/badge/HuggingFace-FFD21E?logo=huggingface&logoColor=white&style=for-the-badge'
     },
     {
@@ -28,9 +28,8 @@ const descList = [
 const Header = () => {
     return (
         <header>
-            <div className="title">NoCode-bench Leaderboard</div>
-            <div className="sub-title">A benchmark designed for no-code feature addition on real-world software
-                projects.
+            <div className="title">Doc2Feat-bench Leaderboard</div>
+            <div className="sub-title">Evaluating Documentation-Driven Feature Addition
             </div>
             <div className="desc-list">
                 {
@@ -194,17 +193,17 @@ const Index = ({leaderboard}) => {
                 <SectionWrapper title='News'>
                     <ul>
                         <li>
-                            <b>2025-07-22</b>: We have released NoCode-bench, evaluate your SE Agents on real-world no-code feature addition tasks here!
+                            <b>2025-07-22</b>: We have released Doc2Feat-bench, evaluate your SE Agents on real-world documentation-driven feature addition tasks here!
                         </li>
                     </ul>
                 </SectionWrapper>
-                <SectionWrapper title='Overview' subtitle='Introduction to NoCode-bench'>
+                <SectionWrapper title='Overview' subtitle='Introduction to Doc2Feat-bench'>
                     <div className='img-wrapper'>
                         <img src={TaskImg} alt="task"/>
                     </div>
-                    <p>NoCode-bench is a benchmark designed to evaluate the ability of Large Language Models (LLMs) to
-                        perform no-code feature addition using natural language documentation as input. Unlike prior
-                        benchmarks that focus on bug fixing or general issue resolution, NoCode-bench targets a new
+                    <p>Doc2Feat-bench is a benchmark designed to evaluate the ability of Large Language Models (LLMs) to
+                        perform documentation-driven feature addition using natural language documentation as input. Unlike prior
+                        benchmarks that focus on bug fixing or general issue resolution, Doc2Feat-bench targets a new
                         paradigm where feature development is driven by documentation changes in real-world software
                         projects.</p>
                     <p>Each instance takes user-facing documentation changes as input and expects the model to generate
@@ -213,19 +212,19 @@ const Index = ({leaderboard}) => {
                     <p></p>
                 </SectionWrapper>
                 <SectionWrapper title='How to submit?'>
-                    If you are interested in submitting your system or model to any of our leaderboards (NoCode-bench
+                    If you are interested in submitting your system or model to any of our leaderboards (Doc2Feat-bench
                     [Verified, Full]), please follow the instructions posted at&nbsp;
-                    <a href="https://github.com/ZJU-CTAG/nocode-bench-experiments" className="light-blue-link"
+                    <a href="https://github.com/Doc2Feat-bench/experiments" className="light-blue-link"
                        target="_blank"
                        rel="noopener noreferrer" style={{display: 'inline-flex', alignItems: 'center', gap: '5px'}}>
-                        NoCode-bench/experiments
+                        Doc2Feat-bench/experiments
                     </a>
                     .
                     <br/>
                     <br/>
                 </SectionWrapper>
                 <SectionWrapper title='Citation'>
-                    If you found the <b>NoCode-bench</b> and <b>NoCode-bench Verified</b> helpful for your work, please cite as follows:
+                    If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:
                     <pre>
                       <code>
                         {`@misc{deng2025nocode,
@@ -236,7 +235,7 @@ const Index = ({leaderboard}) => {
 }`}
                       </code>
                     </pre>
-                    Correspondence to: <u>dengle@zju.edu.cn</u>, <u>liu_zx@zju.edu.cn</u> and <u>zhonghao.j@zju.edu.cn</u>
+                    Correspondence to: <u>zhonghao.j@zju.edu.cn</u> and <u>liu_zx@zju.edu.cn</u>
                     <br/>
                     <br/>
                 </SectionWrapper>

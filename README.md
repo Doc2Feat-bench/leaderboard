@@ -1,14 +1,14 @@
 
 <div align="center">
-  <h1 align="center">NoCode-bench: A Benchmark for Evaluating Natural
-Language-Driven Feature Addition</h1>
+  <h1 align="center">Doc2Feat-bench: A Benchmark for Evaluating
+Documentation-Driven Feature Addition</h1>
 </div>
 
 <div align="center">
-    <a href="https://github.com/ZJU-CTAG/NoCode-bench">
+    <a href="https://github.com/Doc2Feat-bench/Doc2Feat-bench">
         <img src="https://img.shields.io/badge/GitHub-000?logo=github&logoColor=FFE165&style=for-the-badge" alt="">
     </a>
-    <a href="https://huggingface.co/NoCode-bench">
+    <a href="https://huggingface.co/Doc2Feat-bench">
         <img src="https://img.shields.io/badge/Datasets-000?logo=huggingface&logoColor=FFE165&style=for-the-badge" alt="">
     </a>
     <a href="https://arxiv.org/pdf/2507.18130">
@@ -25,4 +25,4 @@ Language-Driven Feature Addition</h1>
 
 ## How to submit?
 
-If you are interested in submitting your system or model to any of our leaderboards (NoCode-bench [Verified, Full]), please follow the instructions posted at [ZJU-CTAG/nocode-bench-experiments](https://github.com/ZJU-CTAG/nocode-bench-experiments).
+If you are interested in submitting your system or model to any of our leaderboards (Doc2Feat-bench [Verified, Full]), please follow the instructions posted at [Doc2Feat-bench/nocode-bench-experiments](https://github.com/Doc2Feat-bench/nocode-bench-experiments).
