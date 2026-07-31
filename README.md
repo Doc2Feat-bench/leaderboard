@@ -25,4 +25,4 @@ Documentation-Driven Feature Addition</h1>
 
 ## How to submit?
 
-If you are interested in submitting your system or model to any of our leaderboards (Doc2Feat-bench [Verified, Full]), please follow the instructions posted at [Doc2Feat-bench/nocode-bench-experiments](https://github.com/Doc2Feat-bench/nocode-bench-experiments).
+If you are interested in submitting your system or model to any of our leaderboards (Doc2Feat-bench [Verified, Full]), please follow the instructions posted at [Doc2Feat-bench/experiments](https://github.com/Doc2Feat-bench/experiments).
