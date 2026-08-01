@@ -221,24 +221,26 @@ const Index = ({leaderboard}) => {
                     </a>
                     .
                     <br/>
-                    <br/>
-                </SectionWrapper>
-                <SectionWrapper title='Citation'>
-                    If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:
-                    <pre>
-                      <code>
-                        {`@misc{deng2025nocode,
-    title   = {NoCode-bench: A Benchmark for Evaluating Natural Language-Driven Feature Addition},
-    author  = {Deng Le and Jiang Zhonghao and Cao Jialun and Pradel Michael and Liu Zhongxin},
-    journal = {arXiv preprint arXiv:2507.18130},
-    year    = {2025}
-}`}
-                      </code>
-                    </pre>
                     Correspondence to: <u>zhonghao.j@zju.edu.cn</u> and <u>liu_zx@zju.edu.cn</u>
                     <br/>
                     <br/>
                 </SectionWrapper>
+{/*                <SectionWrapper title='Citation'>*/}
+{/*                    If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:*/}
+{/*                    <pre>*/}
+{/*                      <code>*/}
+{/*                        {`@misc{deng2025nocode,*/}
+{/*    title   = {NoCode-bench: A Benchmark for Evaluating Natural Language-Driven Feature Addition},*/}
+{/*    author  = {Deng Le and Jiang Zhonghao and Cao Jialun and Pradel Michael and Liu Zhongxin},*/}
+{/*    journal = {arXiv preprint arXiv:2507.18130},*/}
+{/*    year    = {2025}*/}
+{/*}`}*/}
+{/*                      </code>*/}
+{/*                    </pre>*/}
+{/*                    Correspondence to: <u>zhonghao.j@zju.edu.cn</u> and <u>liu_zx@zju.edu.cn</u>*/}
+{/*                    <br/>*/}
+{/*                    <br/>*/}
+{/*                </SectionWrapper>*/}
             </main>
             <Footer/>
         </>
