@@ -10,7 +10,7 @@ const descList = [
     },
     {
         title: 'arxiv',
-        href: 'https://arxiv.org/pdf/2507.18130',
+        href: 'https://arxiv.org/abs/2507.18130v4',
         badge: 'https://img.shields.io/badge/arXiv-900000?logo=arxiv&logoColor=white&style=for-the-badge'
     },
     {
@@ -221,26 +221,24 @@ const Index = ({leaderboard}) => {
                     </a>
                     .
                     <br/>
+                    <br/>
+                </SectionWrapper>
+                <SectionWrapper title='Citation'>
+                    If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:
+                    <pre>
+                      <code>
+                        {`@article{jiang2026doc2feat,
+    title={Doc2Feat-Bench: Evaluating Documentation-Driven Feature Addition}, 
+    author={Zhonghao Jiang and Le Deng and Jialun Cao and Michael Pradel and Zhongxin Liu},
+    journal = {arXiv preprint arXiv:2507.18130},
+    year    = {2026}
+}`}
+                      </code>
+                    </pre>
                     Correspondence to: <u>zhonghao.j@zju.edu.cn</u> and <u>liu_zx@zju.edu.cn</u>
                     <br/>
                     <br/>
                 </SectionWrapper>
-{/*                <SectionWrapper title='Citation'>*/}
-{/*                    If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:*/}
-{/*                    <pre>*/}
-{/*                      <code>*/}
-{/*                        {`@misc{deng2025nocode,*/}
-{/*    title   = {NoCode-bench: A Benchmark for Evaluating Natural Language-Driven Feature Addition},*/}
-{/*    author  = {Deng Le and Jiang Zhonghao and Cao Jialun and Pradel Michael and Liu Zhongxin},*/}
-{/*    journal = {arXiv preprint arXiv:2507.18130},*/}
-{/*    year    = {2025}*/}
-{/*}`}*/}
-{/*                      </code>*/}
-{/*                    </pre>*/}
-{/*                    Correspondence to: <u>zhonghao.j@zju.edu.cn</u> and <u>liu_zx@zju.edu.cn</u>*/}
-{/*                    <br/>*/}
-{/*                    <br/>*/}
-{/*                </SectionWrapper>*/}
             </main>
             <Footer/>
         </>
