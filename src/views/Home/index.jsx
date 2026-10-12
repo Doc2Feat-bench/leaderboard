@@ -10,7 +10,7 @@ const descList = [
     },
     {
         title: 'arxiv',
-        href: 'https://arxiv.org/abs/2507.18130v4',
+        href: 'https://arxiv.org/abs/2507.18130',
         badge: 'https://img.shields.io/badge/arXiv-900000?logo=arxiv&logoColor=white&style=for-the-badge'
     },
     {
@@ -193,6 +193,9 @@ const Index = ({leaderboard}) => {
                 <SectionWrapper title='News'>
                     <ul>
                         <li>
+                            <b>2026-10-15</b>: Presenting Doc2Feat-bench at the IEEE/ACM International Conference on Automated Software Engineering (ASE 2026).
+                        </li>
+                        <li>
                             <b>2025-07-22</b>: We have released Doc2Feat-bench, evaluate your SE Agents on real-world documentation-driven feature addition tasks here!
                         </li>
                     </ul>
@@ -227,11 +230,15 @@ const Index = ({leaderboard}) => {
                     If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:
                     <pre>
                       <code>
-                        {`@article{jiang2026doc2feat,
-    title={Doc2Feat-Bench: Evaluating Documentation-Driven Feature Addition}, 
-    author={Zhonghao Jiang and Le Deng and Jialun Cao and Michael Pradel and Zhongxin Liu},
-    journal = {arXiv preprint arXiv:2507.18130},
-    year    = {2026}
+                        {`@inproceedings{jiang2026doc2feat,
+    title     = {Doc2Feat-Bench: Evaluating Documentation-Driven Feature Addition},
+    author    = {Jiang, Zhonghao and Deng, Le and Cao, Jialun and Pradel, Michael and Liu, Zhongxin},
+    booktitle = {Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering},
+    year      = {2026},
+    publisher = {ACM},
+    pages     = {2447--2459},
+    doi       = {10.1145/3832783.3837489},
+    url       = {https://doi.org/10.1145/3832783.3837489}
 }`}
                       </code>
                     </pre>
