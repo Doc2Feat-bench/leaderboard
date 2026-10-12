@@ -282,3 +282,82 @@ pre {
 code {
   font-family: monospace;
 }
+
+.citation-block {
+  position: relative;
+  margin: 1em 0;
+}
+
+.citation-block pre {
+  margin: 0;
+}
+
+.citation-copy {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #747780;
+  border-radius: 6px;
+  background: #4c5059;
+  color: #eee;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 180ms ease, background-color 180ms ease;
+}
+
+.citation-block:hover .citation-copy,
+.citation-block:focus-within .citation-copy {
+  opacity: 1;
+}
+
+.citation-copy:hover {
+  background: #606570;
+}
+
+.citation-copy:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+.citation-copy:disabled {
+  cursor: wait;
+}
+
+.citation-copy-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (hover: none) {
+  .citation-copy {
+    opacity: 1;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .citation-block pre {
+    padding-top: 64px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .citation-copy {
+    transition: none;
+  }
+}

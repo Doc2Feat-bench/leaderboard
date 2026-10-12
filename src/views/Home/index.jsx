@@ -180,6 +180,61 @@ const SectionWrapper = ({title = '', subtitle = '', children}) => {
     )
 }
 
+const citation = `@inproceedings{jiang2026doc2feat,
+    title     = {Doc2Feat-Bench: Evaluating Documentation-Driven Feature Addition},
+    author    = {Jiang, Zhonghao and Deng, Le and Cao, Jialun and Pradel, Michael and Liu, Zhongxin},
+    booktitle = {Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering},
+    year      = {2026},
+    publisher = {ACM},
+    pages     = {2447--2459},
+    doi       = {10.1145/3832783.3837489},
+    url       = {https://doi.org/10.1145/3832783.3837489}
+}`
+
+const CitationBlock = () => {
+    const [copyStatus, setCopyStatus] = useState('idle')
+
+    useEffect(() => {
+        if (copyStatus !== 'copied' && copyStatus !== 'error') return
+        const timeout = setTimeout(() => setCopyStatus('idle'), 2500)
+        return () => clearTimeout(timeout)
+    }, [copyStatus])
+
+    const copyCitation = async () => {
+        setCopyStatus('copying')
+        try {
+            await navigator.clipboard.writeText(citation)
+            setCopyStatus('copied')
+        } catch {
+            setCopyStatus('error')
+        }
+    }
+
+    return (
+        <div className="citation-block">
+            <pre><code>{citation}</code></pre>
+            <button
+                type="button"
+                className="citation-copy"
+                onClick={copyCitation}
+                disabled={copyStatus === 'copying'}
+                aria-label={copyStatus === 'error' ? 'Copy failed. Try copying citation again' : 'Copy citation'}
+            >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    {copyStatus === 'copied' ? <path d="m5 12 4 4L19 6"/> : <>
+                        <rect x="8" y="8" width="12" height="12" rx="2"/>
+                        <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
+                    </>}
+                </svg>
+                {copyStatus === 'copied' ? 'Copied!' : copyStatus === 'error' ? 'Try again' : copyStatus === 'copying' ? 'Copying…' : 'Copy'}
+            </button>
+            <span className="citation-copy-status" role="status">
+                {copyStatus === 'copied' ? 'Citation copied to clipboard.' : copyStatus === 'error' ? 'Could not copy citation. Please try again.' : ''}
+            </span>
+        </div>
+    )
+}
+
 const Index = ({leaderboard}) => {
 
     return (
@@ -228,20 +283,7 @@ const Index = ({leaderboard}) => {
                 </SectionWrapper>
                 <SectionWrapper title='Citation'>
                     If you found the <b>Doc2Feat-bench</b> and <b>Doc2Feat-bench Verified</b> helpful for your work, please cite as follows:
-                    <pre>
-                      <code>
-                        {`@inproceedings{jiang2026doc2feat,
-    title     = {Doc2Feat-Bench: Evaluating Documentation-Driven Feature Addition},
-    author    = {Jiang, Zhonghao and Deng, Le and Cao, Jialun and Pradel, Michael and Liu, Zhongxin},
-    booktitle = {Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering},
-    year      = {2026},
-    publisher = {ACM},
-    pages     = {2447--2459},
-    doi       = {10.1145/3832783.3837489},
-    url       = {https://doi.org/10.1145/3832783.3837489}
-}`}
-                      </code>
-                    </pre>
+                    <CitationBlock/>
                     Correspondence to: <u>zhonghao.j@zju.edu.cn</u> and <u>liu_zx@zju.edu.cn</u>
                     <br/>
                     <br/>
